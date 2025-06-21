@@ -55,9 +55,23 @@ div {
     text-decoration: none;
 }
 
+.menu a:hover {
+  color: #909497;
+}
+
 .menu-logo {
     display: flex;
     align-items: flex-start;
+}
+
+.menu-logo a:link,
+.menu-logo a:visited {
+    color: #BFFC57;
+    text-decoration: none;
+}
+
+.menu-logo a:hover {
+  color: #909497;
 }
 
 .menu-logo ul li{
