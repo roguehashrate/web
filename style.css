@@ -8,7 +8,6 @@
 html {
   background-color: #191724;
   height: 100%;
-  
 }
 
 body {
@@ -33,7 +32,8 @@ div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0 40px;
+  margin: 32px 0;
+  padding: 8px 0;
 }
 
 .nav-inner {
@@ -65,6 +65,7 @@ div {
 
 .menu a:hover {
   color: #909497;
+  transform: scale(1.03);
 }
 
 /* Logo Menu */
@@ -80,7 +81,8 @@ div {
 }
 
 .menu-logo a:hover {
-  color: #909497;
+  color: #BFFC57;
+  transform: scale(1.03);
 }
 
 .menu-logo ul li {
@@ -97,7 +99,7 @@ div {
 .pfp {
   display: flex;
   justify-content: center;
-  margin: 32px;
+  margin: 48px 0 32px;
 }
 
 .pfp img {
@@ -114,8 +116,8 @@ div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 32px;
-  gap: 16px;
+  margin: 48px 32px;
+  gap: 24px;
 }
 
 /* Contact Section */
@@ -161,7 +163,7 @@ div {
 }
 
 footer {
-  padding: 12px 16px;
+  padding: 24px 16px;
   font-size: 16px;
   display: flex;
   flex-direction: column;
@@ -170,7 +172,6 @@ footer {
   gap: 16px;
   text-align: center;
 }
-
 
 /* General Text Styling */
 .main-content p,
@@ -181,12 +182,12 @@ footer {
 
 /* Main List */
 .main-list {
-  padding: 12px 16px;
+  padding: 20px;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+  gap: 12px;
   border: 2px solid #BFFC57;
 }
 
@@ -201,8 +202,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
-  margin: 16px;
+  gap: 24px;
+  margin: 48px 16px 64px;
   text-align: center;
 }
 
@@ -216,7 +217,7 @@ footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 32px;
 }
 
 /* QR Code Blocks */
@@ -226,7 +227,7 @@ footer {
   align-items: center;
   max-width: 220px;
   word-break: break-word;
-  gap: 8px;
+  gap: 12px;
 }
 
 .qr-block img {
@@ -240,10 +241,10 @@ footer {
 .qr-block code {
   color: #DEDEDE;
   background-color: #262335;
-  padding: 8px;
+  padding: 12px;
   border-radius: 4px;
   font-size: 13px;
-  line-height: 1.4;
+  line-height: 1.5;
   max-width: 100%;
   overflow-wrap: anywhere;
 }
@@ -254,7 +255,7 @@ footer {
   grid-template-columns: repeat(2, 280px);
   justify-content: center;
   gap: 24px 8px;
-  padding: 32px 16px;
+  padding: 48px 16px;
 }
 
 /* Individual Card */
@@ -264,7 +265,7 @@ footer {
   background-color: #262335;
   border: 2px solid #BFFC57;
   border-radius: 16px;
-  padding: 16px;
+  padding: 20px;
   color: #FFFFFF;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   text-align: center;
@@ -307,7 +308,7 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 12px;
+    gap: 16px;
   }
 
   .menu-logo ul {
@@ -327,7 +328,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 16px;
   }
 
   .menu ul {
@@ -344,12 +345,13 @@ footer {
 
   .card-container {
     grid-template-columns: 1fr;
-    gap: 16px 8px;
-    padding: 16px;
-    margin: 24px;
+    gap: 24px 8px;
+    padding: 24px;
+    margin: 32px;
   }
 
   .card {
     max-width: 100%;
   }
 }
+
