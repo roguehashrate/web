@@ -129,17 +129,40 @@ div {
 }
 
 /* Contact Section */
-.main-content-contact::after {
-  content: "";
-  display: block;
+
+.contact-method {
+  background: #191724;
+  border: 1px solid #BFFC57;
+  padding: 24px 32px;
+  margin: 16px 0;
+  border-radius: 30px;
+  transition: transform 0.2s ease, background 0.3s ease;
   width: 100%;
-  height: 2px;
-  background-color: #BFFC57;
+  max-width: 600px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
+.contact-method a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.contact-method:hover {
+  background: #292929;
+  transform: translateY(-2px);
+}
+
+/* "Contact Me" paragraph */
 .main-content-contact p {
   font-size: 20px;
   color: #FFFFFF;
+  text-align: center;
+  max-width: 600px;
+  line-height: 1.6;
+  margin-bottom: 16px;
 }
 
 .main-content-contact p a,
@@ -154,32 +177,46 @@ div {
   text-decoration: none;
 }
 
+/* Contact list container */
 .main-list-contact {
-  padding: 12px 16px;
+  padding: 24px;
   font-size: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #FFFFFF;
-  gap: 8px;
+  gap: 20px;
 }
 
-.main-list-contact ul,
+/* List styling inside contact block */
+.main-list-contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 600px;
+}
+
 .main-list-contact li {
   list-style: none;
-  padding: 8px;
 }
 
+/* Footer styling */
 footer {
-  padding: 24px 16px;
+  margin-top: 64px;
+  padding: 32px 16px;
   font-size: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #FFFFFF;
-  gap: 16px;
+  gap: 24px;
   text-align: center;
+  border-top: 1px solid #333;
 }
+
 
 /* General Text Styling */
 .main-content p,
