@@ -141,6 +141,15 @@ div {
   max-width: 600px;
   box-sizing: border-box;
   text-align: center;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.contact-method:visited {
+  color: #FFFFFF;
+  
 }
 
 .contact-method a {
@@ -148,12 +157,14 @@ div {
   text-decoration: none;
   font-size: 1.2rem;
   line-height: 1.6;
+  display: inline-block;
 }
 
 .contact-method:hover {
   background: #292929;
   transform: translateY(-2px);
 }
+
 
 /* "Contact Me" paragraph */
 .main-content-contact p {
