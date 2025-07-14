@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
   contactDiv.appendChild(title);
 
   const links = [
-    { href: 'https://x.com/roguehashrate', label: '🐦 X (Twitter)' },
     { href: 'https://mstdn.social/@roguehashrate', label: '🐘 Mastodon' },
     { href: 'https://ditto.pub/@roguehashrate@ditto.pub', label: '🦤 Nostr' },
     { href: 'https://bsky.app/profile/roguehashrate.bsky.social', label: '🦋 Bluesky' },
