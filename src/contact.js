@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const links = [
     { href: 'https://mstdn.social/@roguehashrate', label: '🐘 Mastodon' },
     { href: 'https://ditto.pub/@roguehashrate@ditto.pub', label: '🦤 Nostr' },
-    { href: 'https://bsky.app/profile/roguehashrate.bsky.social', label: '🦋 Bluesky' },
     { href: 'mailto:roguehashrate@gmail.com', label: '📬 Send me an Email' }
   ];
 
