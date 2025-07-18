@@ -40,6 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
       desc: 'Fast, extensible CLI package manager in Crystal 💎. Unified install across Apt, Flatpak, Pacstall, Pacman, Paru and Dnf.'
     },
     {
+      name: 'Rogue Alpine Setup',
+      img: '../assets/project6.png',
+      link: 'https://github.com/roguehashrate/rogue-alpine-setup',
+      desc: 'A post-install script that transforms a fresh Alpine Linux system into a modern GNOME desktop — complete with audio, Bluetooth, Flatpak, and GUI-based network management. '
+    },
+    {
       name: 'PkgUp',
       img: '../assets/project4.png',
       link: 'https://github.com/roguehashrate/pkgup',
