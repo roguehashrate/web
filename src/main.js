@@ -63,7 +63,11 @@ document.addEventListener('DOMContentLoaded', () => {
     { img: 'assets/xmr-qr.png', alt: 'xmr-qr', code: '8ASopk7RBMWbEezhFXzWWXAM5EGtJLuCXXgq6JGxxwFz2py9pxPsZFEXXwJhGZ69djQynrybzEsiKJwjc2mk3kJMCvXQztG' },
     { img: 'assets/zec-qr.png', alt: 'zec-qr', code: 'u1xal272aw58nw6g485npgfz0hkq3c9edhfzu3zs8prsjvnaqc2lz62e6wujwajz8v8g0jsqdzksvczzplm4mu6encl8868cagu40a6pahllxg40zqypzj9d4avvacqqgtv6z72y06nksd2e5xwpp97pvgxvfhur6hyzqrq6z43sfnd4u5' },
     { img: 'assets/dash-qr.png', alt: 'dash-qr', code: 'XvZyhMJ9Rh77XwnsuRgtNwqs5BbcVGxCRC' },
-    { img: 'assets/bch-qr.png', alt: 'bch-qr', code: 'bitcoincash:qz7kmyt4q8wwtggnwcj64n6m56wj5rq06uqx9yqwz4' }
+    { img: 'assets/bch-qr.png', alt: 'bch-qr', code: 'bitcoincash:qz7kmyt4q8wwtggnwcj64n6m56wj5rq06uqx9yqwz4' },
+    { img: 'assets/eth-qr.png', alt: 'eth-qr', code: '0x555f9B6b981A8Fe20a02b03fCAe3edEa7fd3F5ca' },
+    { img: 'assets/btc-qr.png', alt: 'btc-qr', code: 'bc1qz4w34ec9mv9v80qg942z3uktnxr7erntfyz00u'}
+
+
   ];
 
   qrData.forEach(({ img, alt, code }) => {
