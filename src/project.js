@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     </div>
   `;
+
   // Main Title
   const main = document.createElement('main');
 
@@ -27,6 +28,18 @@ document.addEventListener('DOMContentLoaded', () => {
   title.textContent = 'Projects';
   content.appendChild(title);
   main.appendChild(content);
+
+  // License Link (before projects)
+  const licenseWrapper = document.createElement('div');
+  licenseWrapper.className = 'license-wrapper';
+
+  const licenseLink = document.createElement('a');
+  licenseLink.href = 'https://rpl.roguehashrate.com';
+  licenseLink.textContent = 'Rogue Pact License (RPL)';
+  licenseLink.className = 'license-link'
+  licenseWrapper.appendChild(licenseLink);
+  content.appendChild(licenseLink);
+  main.appendChild(licenseWrapper);
 
   // Projects
   const cardContainer = document.createElement('div');
@@ -43,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'Rogue Alpine Setup',
       img: '../assets/project6.png',
       link: 'https://github.com/roguehashrate/rogue-alpine-setup',
-      desc: 'A post-install script that transforms a fresh Alpine Linux system into a modern GNOME desktop — complete with audio, Bluetooth, Flatpak, and GUI-based network management. '
+      desc: 'A post-install script that transforms a fresh Alpine Linux system into a modern GNOME desktop — complete with audio, Bluetooth, Flatpak, and GUI-based network management.'
     },
     {
       name: 'PkgUp',
@@ -99,3 +112,4 @@ document.addEventListener('DOMContentLoaded', () => {
   app.appendChild(navBar);
   app.appendChild(main);
 });
+

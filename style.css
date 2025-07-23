@@ -315,6 +315,31 @@ footer {
   padding: 48px 16px;
 }
 
+.license-link {
+  margin-top: -8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #BFFC57;
+  text-decoration: none;
+  border: 1px solid #BFFC57;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.license-link:hover {
+  background-color: #BFFC57;
+  color: #191724;
+  transform: translateY(-1px);
+}
+
+.license-link:link,
+.license-link:visited {
+  color: #BFFC57;
+  text-decoration: none;
+}
+
 /* Individual Card */
 .card {
   display: block;
