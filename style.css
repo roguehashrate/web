@@ -329,7 +329,7 @@ footer {
 }
 
 .license-link:hover {
-  background-color: #BFFC57;
+  background-color: #BFFC57BD;
   color: #191724;
   transform: translateY(-1px);
 }
