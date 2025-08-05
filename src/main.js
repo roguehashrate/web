@@ -62,10 +62,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const qrData = [
     { img: 'assets/xmr-qr.png', alt: 'xmr-qr', code: '8ASopk7RBMWbEezhFXzWWXAM5EGtJLuCXXgq6JGxxwFz2py9pxPsZFEXXwJhGZ69djQynrybzEsiKJwjc2mk3kJMCvXQztG' },
     { img: 'assets/zec-qr.png', alt: 'zec-qr', code: 'u1xal272aw58nw6g485npgfz0hkq3c9edhfzu3zs8prsjvnaqc2lz62e6wujwajz8v8g0jsqdzksvczzplm4mu6encl8868cagu40a6pahllxg40zqypzj9d4avvacqqgtv6z72y06nksd2e5xwpp97pvgxvfhur6hyzqrq6z43sfnd4u5' },
-    { img: 'assets/lbtc-qr.png', alt: 'lbtc-qr', code: 'snazzyrub305@walletofsatoshi.com' },
+    { img: 'assets/lbtc-qr.png', alt: 'lbtc-qr', code: 'roguehashrate@strike.me' },
     { img: 'assets/dash-qr.png', alt: 'dash-qr', code: 'XvZyhMJ9Rh77XwnsuRgtNwqs5BbcVGxCRC' },
     { img: 'assets/bch-qr.png', alt: 'bch-qr', code: 'bitcoincash:qz7kmyt4q8wwtggnwcj64n6m56wj5rq06uqx9yqwz4' },
-    { img: 'assets/btc-qr.png', alt: 'btc-qr', code: 'bc1pgq3wmypl2tr0hl4p89csd4z4uh5dewhz62uu0e6ad5yfz68qgdmqql0twl'}
+    { img: 'assets/btc-qr.png', alt: 'btc-qr', code: 'bc1qevwqcm0y8yp9876flasm625tqf3g4dagxmd2k6'}
 
 
   ];
