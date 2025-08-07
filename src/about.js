@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const about = [
     'I’m a fan of Linux and BSD, though admittedly I’ve primarily used Linux.',
+    'I am a fan of firearms as well.',
     'Currently, I run Alpine Linux as my distro of choice.',
     'My desktop environment of choice is GNOME.',
     'I use mksh as my shell.',
