@@ -60,6 +60,14 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'Google Pixel 9a - Unlocked',
       link: 'https://amzn.to/4m8s3uS',
     },
+    {
+      name: 'Creality Ender 3 3D Printer Fully Open Source with Resume Printing Function DIY Printers Build Volulme 8.66x8.66x9.84 inch',
+      link: 'https://amzn.to/45uab6G',
+    },
+    {
+      name: 'eSUN PLA PRO (PLA+) 3D Printer Filament [1kg Spool (Black)]',
+      link: 'https://amzn.to/3URou0e',
+    },
 
 
   ];
