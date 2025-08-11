@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
         <ul><li><a href="/pages/contact.html">Contact</a></li></ul>
         <ul><li><a href="/pages/affiliate.html">Affiliate</a></li></ul>
       </div>
-    </div>  `;
+    </div>
+  `;
 
   // Main Title
   const main = document.createElement('main');
