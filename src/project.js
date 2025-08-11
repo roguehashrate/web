@@ -12,9 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="menu">
         <ul><li><a href="/">Home</a></li></ul>
         <ul><li><a href="pages/project.html">Projects</a></li></ul>
-        <ul><li><a href="pages/about.html">About</a></li></ul>
         <ul><li><a href="pages/contact.html">Contact</a></li></ul>
-        <ul><li><a hfer="pages/affiliate.html">Affiliate</a></li></ul>
+        <ul><li><a href="pages/affiliate.html">Affiliate</a></li></ul>
       </div>
     </div>
   `;
