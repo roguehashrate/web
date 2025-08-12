@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
         <ul><li><a href="/">Home</a></li></ul>
         <ul><li><a href="pages/project.html">Projects</a></li></ul>
         <ul><li><a href="pages/contact.html">Contact</a></li></ul>
-        <ul><li><a href="pages/affiliate.html">Affiliate</a></li></ul>
       </div>
     </div>
   `;
