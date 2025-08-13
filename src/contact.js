@@ -28,7 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const links = [
     { href: 'https://ditto.pub/@roguehashrate.com', label: '🦤 Nostr' },
-    { href: 'mailto:roguehashrate@duck.com', label: '📬 Send me an Email' }
+    { href: '@roguehashrate:matrix.org', label: '💬 Matrix' },
+    { href: 'mailto:roguehashrate@duck.com', label: '📬 Email' }
   ];
 
   links.forEach(link => {
