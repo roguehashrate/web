@@ -253,6 +253,18 @@ footer {
   padding: 8px;
 }
 
+.main-content h1 {
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+
+.main-list h2 {
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+
 /* Donate Section */
 .donate {
   display: flex;
