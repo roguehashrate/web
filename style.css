@@ -6,7 +6,7 @@
 }
 
 html {
-  background-color: #191724;
+  background-color: #1f1f1f;
   height: 100%;
 }
 
@@ -84,12 +84,12 @@ div {
 
 .menu-logo a:link,
 .menu-logo a:visited {
-  color: #BFFC57;
+  color: #e8af31;
   text-decoration: none;
 }
 
 .menu-logo a:hover {
-  color: #BFFC57;
+  color: #e8af31;
   transform: scale(1.03);
 }
 
@@ -99,7 +99,7 @@ div {
   padding: 6px;
   margin-top: 32px;
   margin-left: 16px;
-  color: #BFFC57;
+  color: #e8af31;
   font-size: 20px;
 }
 
@@ -112,7 +112,7 @@ div {
 
 .pfp img {
   display: flex;
-  border: solid #BFFC57;
+  border: solid #e8af31;
   border-radius: 50%;
   width: 250px;
   height: 250px;
@@ -131,8 +131,8 @@ div {
 /* Contact Section */
 
 .contact-method {
-  background: #191724;
-  border: 1px solid #BFFC57;
+  background: #1f1f1f;
+  border: 1px solid #e8af31;
   padding: 24px 32px;
   margin: 16px 0;
   border-radius: 30px;
@@ -161,7 +161,7 @@ div {
 }
 
 .contact-method:hover {
-  background: #292929;
+  background: #1f1f1f;
   transform: translateY(-2px);
 }
 
@@ -244,7 +244,7 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
-  border: 2px solid #BFFC57;
+  border: 2px solid #e8af31;
 }
 
 .main-list ul,
@@ -299,7 +299,7 @@ footer {
 }
 
 .qr-block img {
-  border: 2px solid #BFFC57;
+  border: 2px solid #e8af31;
   padding: 8px;
   width: 150px;
   height: auto;
@@ -308,7 +308,7 @@ footer {
 
 .qr-block code {
   color: #DEDEDE;
-  background-color: #262335;
+  background-color: #303030;
   padding: 12px;
   border-radius: 4px;
   font-size: 13px;
@@ -331,9 +331,9 @@ footer {
   margin-top: -8px;
   margin-bottom: 16px;
   font-size: 14px;
-  color: #BFFC57;
+  color: #e8af31;
   text-decoration: none;
-  border: 1px solid #BFFC57;
+  border: 1px solid #e8af31;
   padding: 8px 16px;
   border-radius: 20px;
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
@@ -341,14 +341,14 @@ footer {
 }
 
 .license-link:hover {
-  background-color: #BFFC57BD;
-  color: #191724;
+  background-color: #e8af31BD;
+  color: #1f1f1f;
   transform: translateY(-1px);
 }
 
 .license-link:link,
 .license-link:visited {
-  color: #BFFC57;
+  color: #e8af31;
   text-decoration: none;
 }
 
@@ -356,8 +356,8 @@ footer {
 .card {
   display: block;
   margin: 0;
-  background-color: #262335;
-  border: 2px solid #BFFC57;
+  background-color: #303030;
+  border: 2px solid #e8af31;
   border-radius: 16px;
   padding: 20px;
   color: #FFFFFF;
@@ -370,11 +370,11 @@ footer {
 
 .card:hover {
   transform: scale(1.03);
-  box-shadow: 0 0 20px #BFFC57;
+  box-shadow: 0 0 20px #e8af31;
 }
 
 .card h3 {
-  color: #BFFC57;
+  color: #e8af31;
   margin-bottom: 12px;
 }
 
@@ -414,7 +414,7 @@ footer {
   .menu-logo ul li {
     margin-top: 0;
     font-size: 24px;
-    color: #BFFC57;
+    color: #e8af31;
   }
 
   .menu {
