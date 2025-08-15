@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mainListDiv = document.createElement('div');
   mainListDiv.className = 'main-list';
 
-  const interests = ['🐧 All things Linux', '⚙ Building CLI tools', '🔫PewPews'];
+  const interests = ['🐧 All things Linux', '⚙ Building CLI tools', '🔫 PewPews'];
   const ul = document.createElement('ul');
   interests.forEach(interest => {
     const li = document.createElement('li');
