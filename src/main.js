@@ -64,8 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
     { img: 'assets/zec-qr.png', alt: 'zec-qr', code: 'u1xal272aw58nw6g485npgfz0hkq3c9edhfzu3zs8prsjvnaqc2lz62e6wujwajz8v8g0jsqdzksvczzplm4mu6encl8868cagu40a6pahllxg40zqypzj9d4avvacqqgtv6z72y06nksd2e5xwpp97pvgxvfhur6hyzqrq6z43sfnd4u5' },
     { img: 'assets/btc-qr.png', alt: 'btc-qr', code: 'bc1pr9dyuky5ytnv3z4hh5e6xearhpaudz33737k84m4hndmpp0pj57s8dzrfz'},
     { img: 'assets/lbtc-qr.png', alt: 'lbtc-qr', code: 'roguehashrate@coinos.io' },
-
-
   ];
 
   qrData.forEach(({ img, alt, code }) => {
@@ -89,9 +87,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   main.appendChild(mainContent);
 
+  // Footer with EEPSite link
+  const footer = document.createElement('footer');
+  footer.className = 'footer';
+  footer.innerHTML = `
+    <p>i2p: 
+      <a href="http://roguehashrate.i2p/?i2paddresshelper=AxoVkaMC4FvZQ3STZfhJWn7ApjHzv0OV9A6Kyl45TfIDGhWRowLgW9lDdJNl-ElafsCmMfO~Q5X0DorKXjlN8gMaFZGjAuBb2UN0k2X4SVp-wKYx879DlfQOispeOU3yAxoVkaMC4FvZQ3STZfhJWn7ApjHzv0OV9A6Kyl45TfIDGhWRowLgW9lDdJNl-ElafsCmMfO~Q5X0DorKXjlN8gMaFZGjAuBb2UN0k2X4SVp-wKYx879DlfQOispeOU3yAxoVkaMC4FvZQ3STZfhJWn7ApjHzv0OV9A6Kyl45TfIDGhWRowLgW9lDdJNl-ElafsCmMfO~Q5X0DorKXjlN8gMaFZGjAuBb2UN0k2X4SVp-wKYx879DlfQOispeOU3yAxoVkaMC4FvZQ3STZfhJWn7ApjHzv0OV9A6Kyl45TfIDGhWRowLgW9lDdJNl-ElafsCmMfO~Q5X0DorKXjlN8mg-AF~MKcGVo893XQFbQT~o33Px-pvLOGhWSlwje5htBQAEAAcAAA==" target="_blank" rel="noopener noreferrer" class="footer-link">
+        http://roguehashrate.i2p/
+      </a>
+    </p>
+  `;
+
   // Append all to app
   app.appendChild(navBar);
   app.appendChild(pfpDiv);
   app.appendChild(main);
+  app.appendChild(footer);
 });
 

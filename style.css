@@ -24,6 +24,7 @@ body {
   animation: fadeInBody 0.2s ease-in-out forwards;
 }
 
+
 @keyframes fadeInBody {
   to {
     opacity: 1;
@@ -226,6 +227,23 @@ footer {
   gap: 24px;
   text-align: center;
   border-top: 1px solid #333;
+}
+
+.footer-link {
+  color: #e8af31;
+  text-decoration: none;
+}
+
+
+.footer-link a:link,
+.footer-link a:visited {
+  color: #e8af31;
+  text-decoration: none;
+}
+
+.footer-link a:hover {
+  color: #e8af31;
+  transform: scale(1.03);
 }
 
 
