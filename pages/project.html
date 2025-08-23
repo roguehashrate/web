@@ -11,7 +11,63 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div id="app"></div>
-  <script type="module" src="/src/project.js"></script>
+    <div id="app">
+        <div class="navBar">
+            <div class="nav-inner">
+                <div class="menu-logo">
+                    <ul><li><a href="/">RogueHashrate</a></li></ul>
+                </div>
+                <div class="menu">
+                    <ul><li><a href="/">Home</a></li></ul>
+                    <ul><li><a href="/pages/project.html">Projects</a></li></ul>
+                    <ul><li><a href="/pages/contact.html">Contact</a></li></ul>
+                    <ul><li><a href="/pages/soverism-en.html">Manifesto</a></li></ul>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <div class="main-content-contact">
+                <p>Projects</p>
+            </div>
+            
+            <div class="license-wrapper">
+                <a href="https://rpl.roguehashrate.com" class="license-link">Rogue Pact License (RPL)</a>
+            </div>
+
+            <div class="card-container">
+                <a class="card" href="https://github.com/roguehashrate/pkgz" target="_blank">
+                    <h3>Pkgz</h3>
+                    <img src="../assets/pkgz-logo.png" alt="Pkgz project image">
+                    <p>Fast, extensible CLI package manager in Crystal 💎. Unified install across Apt, Flatpak, Pacstall, Pacman, Paru and Dnf.</p>
+                </a>
+                <a class="card" href="https://github.com/roguehashrate/rogue-alpine-setup" target="_blank">
+                    <h3>Rogue Alpine Setup</h3>
+                    <img src="../assets/project6.png" alt="Rogue Alpine Setup project image">
+                    <p>A post-install script that transforms a fresh Alpine Linux system into a modern GNOME desktop — complete with audio, Bluetooth, Flatpak, and GUI-based network management.</p>
+                </a>
+                <a class="card" href="https://github.com/roguehashrate/pkgup" target="_blank">
+                    <h3>PkgUp</h3>
+                    <img src="../assets/project4.png" alt="PkgUp project image">
+                    <p>A simple Crystal CLI tool to update system packages and Flatpak apps on Debian-based GNU/Linux systems.</p>
+                </a>
+                <a class="card" href="https://github.com/roguehashrate/zcash-to-fiat" target="_blank">
+                    <h3>Zcash to Fiat</h3>
+                    <img src="../assets/project1.png" alt="Zcash to Fiat project image">
+                    <p>A simple little CLI program that shows the current ZEC price in fiat currency and allows for basic conversions ZEC↔Fiat.</p>
+                </a>
+                <a class="card" href="https://roguehashrate.github.io/paymeinmorz/" target="_blank">
+                    <h3>Pay me in M or Z</h3>
+                    <img src="../assets/project2.png" alt="Pay me in M or Z project image">
+                    <p>A simple payment URI/QR code generator for Monero (XMR) and Zcash (ZEC).</p>
+                </a>
+                <a class="card" href="https://github.com/roguehashrate/zecret-explorer" target="_blank">
+                    <h3>Zecret Explorer</h3>
+                    <img src="../assets/project3.png" alt="Zecret Explorer project image">
+                    <p>A simple command-line Zcash blockchain explorer written in Python. Fetch detailed information about any Zcash block by height or hash.</p>
+                </a>
+            </div>
+        </main>
+    </div>
 </body>
 </html>

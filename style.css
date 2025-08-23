@@ -215,6 +215,33 @@ div {
   list-style: none;
 }
 
+.lang-toggle {
+    margin: 16px 0;
+}
+
+.lang-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #e8af31;
+    border: 1px solid #e8af31;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+        
+.lang-button:hover {
+    background-color: rgba(232, 175, 49, 0.74);
+    color: #1f1f1f;
+    transform: translateY(-1px);
+}
+        
+.lang-button-current {
+    background-color: rgba(232, 175, 49, 0.74);
+    color: #1f1f1f;
+    cursor: default;
+}
+
 /* Footer styling */
 footer {
   margin-top: 64px;
@@ -345,6 +372,10 @@ footer {
   padding: 48px 16px;
 }
 
+.license-wrapper {
+  text-align: center;
+}
+
 .license-link {
   margin-top: -8px;
   margin-bottom: 16px;
@@ -359,7 +390,7 @@ footer {
 }
 
 .license-link:hover {
-  background-color: #e8af31BD;
+  background-color: rgba(232, 175, 49, 0.74);
   color: #1f1f1f;
   transform: translateY(-1px);
 }
