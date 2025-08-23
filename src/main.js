@@ -62,8 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const qrData = [
     { img: 'assets/xmr-qr.png', alt: 'xmr-qr', code: '8ASopk7RBMWbEezhFXzWWXAM5EGtJLuCXXgq6JGxxwFz2py9pxPsZFEXXwJhGZ69djQynrybzEsiKJwjc2mk3kJMCvXQztG' },
     { img: 'assets/zec-qr.png', alt: 'zec-qr', code: 'u1xal272aw58nw6g485npgfz0hkq3c9edhfzu3zs8prsjvnaqc2lz62e6wujwajz8v8g0jsqdzksvczzplm4mu6encl8868cagu40a6pahllxg40zqypzj9d4avvacqqgtv6z72y06nksd2e5xwpp97pvgxvfhur6hyzqrq6z43sfnd4u5' },
-    { img: 'assets/btc-qr.png', alt: 'btc-qr', code: 'bc1qevwqcm0y8yp9876flasm625tqf3g4dagxmd2k6'},
-    { img: 'assets/lbtc-qr.png', alt: 'lbtc-qr', code: 'roguehashrate@strike.me' },
+    { img: 'assets/btc-qr.png', alt: 'btc-qr', code: 'bc1pr9dyuky5ytnv3z4hh5e6xearhpaudz33737k84m4hndmpp0pj57s8dzrfz'},
+    { img: 'assets/lbtc-qr.png', alt: 'lbtc-qr', code: 'roguehashrate@coinos.io' },
 
 
   ];
