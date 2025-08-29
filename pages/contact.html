@@ -3,38 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RogueHashrate|Contact</title>
+  <title>RogueHashrate | Contact</title>
   <link rel="stylesheet" href="../style.css" />
   <link rel="icon" href="../assets/roguehashrate.png" />
 </head>
 <body>
-    <div id="app">
-        <div class="navBar">
-            <div class="nav-inner">
-                <div class="menu-logo">
-                    <ul><li><a href="/">RogueHashrate</a></li></ul>
-                </div>
-                <div class="menu">
-                    <ul><li><a href="/">Home</a></li></ul>
-                    <ul><li><a href="/pages/project.html">Projects</a></li></ul>
-                    <ul><li><a href="/pages/contact.html">Contact</a></li></ul>
-                    <ul><li><a href="/pages/donate.html">Donation</a></li></ul>
-                </div>
-            </div>
+  <div id="app">
+    <div class="navBar">
+      <div class="nav-inner">
+        <div class="menu-logo">
+          <ul><li><a href="/">RogueHashrate</a></li></ul>
         </div>
-
-        <main>
-            <div class="main-content-contact">
-                <p>Contact Me</p>
-                <a href="https://nostr.at/npub1hs5244d3vle3m5muvmvvjh2qp3jprkpjwhk393gy7cykt50eamrq8f5rx4" target="_blank" class="contact-method">🦤 Nostr</a>
-                <a href="@roguehashrate:matrix.org" class="contact-method">💬 Matrix</a>
-                <a href="mailto:roguehashrate@duck.com" class="contact-method">📬 Email</a>
-            </div>
-        </main>
-
-        <footer>
-            <p>Feel free to ask me any questions you may have, I'm generally pretty good at getting back to people.</p>
-        </footer>
+        <div class="menu">
+          <ul><li><a href="/">Home</a></li></ul>
+          <ul><li><a href="/pages/project.html">Projects</a></li></ul>
+          <ul><li><a href="/pages/contact.html">Contact</a></li></ul>
+          <ul><li><a href="/pages/donate.html">Donation</a></li></ul>
+        </div>
+      </div>
     </div>
+
+    <main>
+      <div class="main-content-contact">
+        <p>Contact Me</p>
+        <a href="https://nostr.at/npub1hs5244d3vle3m5muvmvvjh2qp3jprkpjwhk393gy7cykt50eamrq8f5rx4" target="_blank" class="contact-method">🦤 Nostr</a>
+        
+        <!-- Matrix Copy -->
+        <a href="#" id="matrix-link" class="contact-method">💬 Matrix</a>
+        <span id="copy-success" class="copy-success">Copied!</span>
+
+        <a href="mailto:roguehashrate@duck.com" class="contact-method">📬 Email</a>
+      </div>
+    </main>
+
+    <footer>
+      <p>Feel free to ask me any questions you may have, I'm generally pretty good at getting back to people.</p>
+    </footer>
+  </div>
+
+  <script>
+    const matrixID = "@roguehashrate:matrix.org";
+    const matrixLink = document.getElementById("matrix-link");
+    const successMsg = document.getElementById("copy-success");
+
+    matrixLink.addEventListener("click", function(e) {
+      e.preventDefault();
+      navigator.clipboard.writeText(matrixID).then(() => {
+        successMsg.style.display = "inline";
+        setTimeout(() => successMsg.style.display = "none", 2000);
+      });
+    });
+  </script>
 </body>
 </html>

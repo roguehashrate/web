@@ -441,6 +441,13 @@ footer {
   line-height: 1.5;
 }
 
+.copy-success {
+  color: #e8af31;
+  font-size: 0.9em;
+  margin-left: 10px;
+  display: none;
+}
+
 /* Responsive - Mobile */
 @media (max-width: 600px) {
   .navBar {
