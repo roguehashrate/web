@@ -1,3 +1,7 @@
 { "names": 
     { "_": "bc28aad5b167f31dd37c66d8c95d400c6411d83275ed12c504f60965d1f9eec6"}
+},
+  "relays": {
+    "bc28aad5b167f31dd37c66d8c95d400c6411d83275ed12c504f60965d1f9eec6": [ "wss://relay.damus.io" ],
+    "bc28aad5b167f31dd37c66d8c95d400c6411d83275ed12c504f60965d1f9eec6": [ "wss://zap.watch" ]
 }
