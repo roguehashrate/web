@@ -27,11 +27,6 @@
       <div class="main-content-contact">
         <p>Contact Me</p>
         <a href="https://nostr.at/npub1hs5244d3vle3m5muvmvvjh2qp3jprkpjwhk393gy7cykt50eamrq8f5rx4" target="_blank" class="contact-method">🦤 Nostr</a>
-        
-        <a href="#" class="contact-method"
-            onclick="navigator.clipboard?.writeText('@roguehashrate:matrix.org') || (function(t){const el=document.createElement('textarea');el.value=t;document.body.appendChild(el);el.select();document.execCommand('copy');document.body.removeChild(el);})( '@roguehashrate:matrix.org' ); alert('Copied Matrix ID!'); return false;">
-            💬 Matrix
-        </a>
 
         <a href="mailto:roguehashrate@duck.com" class="contact-method">📬 Email</a>
       </div>
@@ -41,19 +36,5 @@
       <p>Feel free to ask me any questions you may have, I'm generally pretty good at getting back to people.</p>
     </footer>
   </div>
-
-  <script>
-    const matrixID = "@roguehashrate:matrix.org";
-    const matrixLink = document.getElementById("matrix-link");
-    const successMsg = document.getElementById("copy-success");
-
-    matrixLink.addEventListener("click", function(e) {
-      e.preventDefault();
-      navigator.clipboard.writeText(matrixID).then(() => {
-        successMsg.style.display = "inline";
-        setTimeout(() => successMsg.style.display = "none", 2000);
-      });
-    });
-  </script>
 </body>
 </html>
