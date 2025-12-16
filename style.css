@@ -85,12 +85,12 @@ div {
 
 .menu-logo a:link,
 .menu-logo a:visited {
-  color: #e8af31;
+  color: #F2921D;
   text-decoration: none;
 }
 
 .menu-logo a:hover {
-  color: #e8af31;
+  color: #F2921D;
   transform: scale(1.03);
 }
 
@@ -100,7 +100,7 @@ div {
   padding: 6px;
   margin-top: 32px;
   margin-left: 16px;
-  color: #e8af31;
+  color: #F2921D;
   font-size: 20px;
 }
 
@@ -113,7 +113,7 @@ div {
 
 .pfp img {
   display: flex;
-  border: solid #e8af31;
+  border: solid #F2921D;
   border-radius: 50%;
   width: 250px;
   height: 250px;
@@ -134,7 +134,7 @@ div {
 
 .contact-method {
   background: #1f1f1f;
-  border: 1px solid #e8af31;
+  border: 1px solid #F2921D;
   padding: 24px 32px;
   margin: 16px 0;
   border-radius: 30px;
@@ -223,8 +223,8 @@ div {
 .lang-button {
     display: inline-block;
     text-decoration: none;
-    color: #e8af31;
-    border: 1px solid #e8af31;
+    color: #F2921D;
+    border: 1px solid #F2921D;
     padding: 8px 16px;
     border-radius: 20px;
     transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
@@ -232,7 +232,7 @@ div {
 }
         
 .lang-button:hover {
-    background-color: rgba(232, 175, 49, 0.74);
+    background-color: rgba(223, 171, 61, 0.74);
     color: #1f1f1f;
     transform: translateY(-1px);
 }
@@ -258,19 +258,19 @@ footer {
 }
 
 .footer-link {
-  color: #e8af31;
+  color: #F2921D;
   text-decoration: none;
 }
 
 
 .footer-link a:link,
 .footer-link a:visited {
-  color: #e8af31;
+  color: #F2921D;
   text-decoration: none;
 }
 
 .footer-link a:hover {
-  color: #e8af31;
+  color: #F2921D;
   transform: scale(1.03);
 }
 
@@ -290,7 +290,7 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
-  border: 2px solid #e8af31;
+  border: 2px solid #F2921D;
 }
 
 .main-list ul,
@@ -345,7 +345,7 @@ footer {
 }
 
 .qr-block img {
-  border: 2px solid #e8af31;
+  border: 2px solid #F2921D;
   padding: 8px;
   width: 150px;
   height: auto;
@@ -381,9 +381,9 @@ footer {
   margin-top: -8px;
   margin-bottom: 16px;
   font-size: 14px;
-  color: #e8af31;
+  color: #F2921D;
   text-decoration: none;
-  border: 1px solid #e8af31;
+  border: 1px solid #F2921D;
   padding: 8px 16px;
   border-radius: 20px;
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
@@ -391,14 +391,14 @@ footer {
 }
 
 .license-link:hover {
-  background-color: rgba(232, 175, 49, 0.74);
+  background-color: rgba(232, 141, 49, 0.74);
   color: #1f1f1f;
   transform: translateY(-1px);
 }
 
 .license-link:link,
 .license-link:visited {
-  color: #e8af31;
+  color: #F2921D;
   text-decoration: none;
 }
 
@@ -407,7 +407,7 @@ footer {
   display: block;
   margin: 0;
   background-color: #303030;
-  border: 2px solid #e8af31;
+  border: 2px solid #F2921D;
   border-radius: 16px;
   padding: 20px;
   color: #FFFFFF;
@@ -420,11 +420,11 @@ footer {
 
 .card:hover {
   transform: scale(1.03);
-  box-shadow: 0 0 20px #e8af31;
+  box-shadow: 0 0 20px #F2921D;
 }
 
 .card h3 {
-  color: #e8af31;
+  color: #F2921D;
   margin-bottom: 12px;
 }
 
@@ -443,7 +443,7 @@ footer {
 }
 
 .copy-success {
-  color: #e8af31;
+  color: #F2921D;
   font-size: 0.9em;
   margin-left: 10px;
   display: none;
@@ -471,7 +471,7 @@ footer {
   .menu-logo ul li {
     margin-top: 0;
     font-size: 24px;
-    color: #e8af31;
+    color: #F2921D;
   }
 
   .menu {
