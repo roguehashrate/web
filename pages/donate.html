@@ -14,11 +14,16 @@
                 <div class="menu-logo">
                     <ul><li><a href="/">RogueHashrate</a></li></ul>
                 </div>
-                <div class="menu">
-                    <ul><li><a href="/">Home</a></li></ul>
-                    <ul><li><a href="/pages/project.html">Projects</a></li></ul>
-                    <ul><li><a href="/pages/contact.html">Contact</a></li></ul>
-                    <ul><li><a href="/pages/donate.html">Donation</a></li></ul>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+                <div class="menu" id="menu">
+                  <a href="/">Home</a>
+                  <a href="/pages/project.html">Projects</a>
+                  <a href="/pages/contact.html">Contact</a>
+                  <a href="/pages/donate.html">Donation</a>
                 </div>
             </div>
         </div>
@@ -59,11 +64,8 @@
             </div>
           </div>
         </div>
-           
-        </main>
 
     <footer>
-      <p>Built with care on Linux</p>
       <div class="footer-links">
         <a href="/" class="footer-link">Home</a>
         <span class="footer-separator">•</span>
@@ -75,6 +77,33 @@
     </footer>
 
     </div>
+
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const menu = document.getElementById('menu');
+      
+      hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        menu.classList.toggle('active');
+      });
+      
+      // Close menu when clicking a link
+      const menuLinks = menu.querySelectorAll('a');
+      menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          hamburger.classList.remove('active');
+          menu.classList.remove('active');
+        });
+      });
+      
+      // Close menu when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!hamburger.contains(event.target) && !menu.contains(event.target)) {
+          hamburger.classList.remove('active');
+          menu.classList.remove('active');
+        }
+      });
+    </script>
 </body>
 </html>
        
