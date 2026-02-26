@@ -3,7 +3,7 @@
     "_": "bc28aad5b167f31dd37c66d8c95d400c6411d83275ed12c504f60965d1f9eec6"
   },
   "relays": {
-      "bc28aad5b167f31dd37c66d8c95d400c6411d83275ed12c504f60965d1f9eec6": [ "wss://nostrelites.org" ],
-      "bc28aad5b167f31dd37c66d8c95d400c6411d83275ed12c504f60965d1f9eec6": [ "wss://zap.watch" ]
+      "bc28aad5b167f31dd37c66d8c95d400c6411d83275ed12c504f60965d1f9eec6": [ "wss://nostr-01.yakihonne.com" ],
+      "bc28aad5b167f31dd37c66d8c95d400c6411d83275ed12c504f60965d1f9eec6": [ "wss://relay.damus.io ]
   }
 }
