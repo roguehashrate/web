@@ -23,7 +23,7 @@ body::before, body::after, .star-1, .star-2, .star-3, .star-4, .star-5, .star-6,
   position: absolute;
   width: 4px;
   height: 4px;
-  background: #F2921D;
+  background: #3B82F6;
   border-radius: 50%;
   opacity: 0.4;
   animation: drift 20s linear infinite;
@@ -59,8 +59,8 @@ body::after { top: 60%; left: 80%; animation-delay: -5s; opacity: 0.3; }
   height: 120px;
   border-radius: 50%;
   margin-bottom: 1.5rem;
-  border: 2px solid #F2921D;
-  box-shadow: 0 0 20px rgba(242, 146, 29, 0.4);
+  border: 2px solid #3B82F6;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
   animation: float 3s ease-in-out infinite;
 }
 
@@ -89,16 +89,16 @@ h1 {
   word-break: break-all;
   margin-bottom: 2rem;
   font-family: monospace;
-  border: 1px solid #F2921D;
+  border: 1px solid #3B82F6;
   padding: 0.75rem;
   border-radius: 8px;
-  background: rgba(242, 146, 29, 0.1);
+  background: rgba(59, 130, 246, 0.1);
   cursor: pointer;
   transition: background 0.2s;
 }
 
 .npub:hover {
-  background: rgba(242, 146, 29, 0.2);
+  background: rgba(59, 130, 246, 0.2);
 }
 
 .links {
@@ -112,16 +112,16 @@ h1 {
   display: block;
   padding: 0.875rem 1.5rem;
   background: #1a1a1a;
-  color: #F2921D;
+  color: #3B82F6;
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
   font-size: 0.9rem;
-  border: 1px solid #F2921D;
+  border: 1px solid #3B82F6;
   transition: background 0.2s, border-color 0.2s;
 }
 
 .link:hover {
-  background: #F2921D;
+  background: #3B82F6;
   color: #0d0d0d;
 }
