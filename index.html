@@ -24,9 +24,12 @@
     
     <h1>RogueHashrate</h1>
     
-    <p class="npub-label">find me on nostr</p>
+    <p class="npub-label">find me on nostr <img src="assets/nostr-icon-white-transparent.svg" alt="nostr" class="nostr-icon"></p>
     
-    <p class="npub" id="npub">npub1hs5244d3vle3m5muvmvvjh2qp3jprkpjwhk393gy7cykt50eamrq8f5rx4</p>
+    <p class="npub" id="npub">
+      <span class="npub-full">npub1hs5244d3vle3m5muvmvvjh2qp3jprkpjwhk393gy7cykt50eamrq8f5rx4</span>
+      <span class="npub-copied">copied!</span>
+    </p>
     
     <div class="links">
       <a href="https://jumble.roguehashrate.com" class="link">RogueJumble</a>
@@ -38,11 +41,12 @@
 
   <script>
     const npub = document.getElementById('npub');
+    
     npub.addEventListener('click', async () => {
-      await navigator.clipboard.writeText(npub.textContent);
-      npub.textContent = 'copied!';
+      await navigator.clipboard.writeText(npub.querySelector('.npub-full').textContent);
+      npub.classList.add('copied');
       setTimeout(() => {
-        npub.textContent = 'npub1hs5244d3vle3m5muvmvvjh2qp3jprkpjwhk393gy7cykt50eamrq8f5rx4';
+        npub.classList.remove('copied');
       }, 1500);
     });
   </script>
