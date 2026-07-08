@@ -26,10 +26,16 @@
     
     <p class="npub-label">find me on nostr <img src="assets/nostr-icon-white-transparent.svg" alt="nostr" class="nostr-icon"></p>
     
-    <p class="npub" id="npub">
+    <p class="npub" id="npub-nostr">
       <span class="npub-full">npub1hs5244d3vle3m5muvmvvjh2qp3jprkpjwhk393gy7cykt50eamrq8f5rx4</span>
       <span class="npub-copied">copied!</span>
     </p>
+    
+    <p class="npub-label">message me</p>
+    
+    <div class="links">
+      <a href="https://signal.me/#eu/aQIlI47-gBMiu5AYp-Q0CiX6oIuM27aBjqU61U97uR67eFY_Rf1CK56IiaPFBbUP" class="link" target="_blank">Radar.chat (signal)</a>
+    </div>
     
     <div class="links">
       <a href="https://jumble.roguehashrate.com" class="link">RogueJumble</a>
@@ -42,14 +48,14 @@
   </div>
 
   <script>
-    const npub = document.getElementById('npub');
-    
-    npub.addEventListener('click', async () => {
-      await navigator.clipboard.writeText(npub.querySelector('.npub-full').textContent);
-      npub.classList.add('copied');
-      setTimeout(() => {
-        npub.classList.remove('copied');
-      }, 1500);
+    document.querySelectorAll('.npub').forEach(el => {
+      el.addEventListener('click', async () => {
+        await navigator.clipboard.writeText(el.querySelector('.npub-full').textContent);
+        el.classList.add('copied');
+        setTimeout(() => {
+          el.classList.remove('copied');
+        }, 1500);
+      });
     });
   </script>
   </div>
