@@ -3,8 +3,9 @@
     "_": "bc28aad5b167f31dd37c66d8c95d400c6411d83275ed12c504f60965d1f9eec6"
   },
   "relays": {
-      "bc28aad5b167f31dd37c66d8c95d400c6411d83275ed12c504f60965d1f9eec6": [ "wss://realy.ditto.pub" ],
+      "bc28aad5b167f31dd37c66d8c95d400c6411d83275ed12c504f60965d1f9eec6": [ "wss://relay.ditto.pub" ],
       "bc28aad5b167f31dd37c66d8c95d400c6411d83275ed12c504f60965d1f9eec6": [ "wss://nos.lol" ],
-      "bc28aad5b167f31dd37c66d8c95d400c6411d83275ed12c504f60965d1f9eec6": [ "wss://theforest.nostr1.com" ]
+      "bc28aad5b167f31dd37c66d8c95d400c6411d83275ed12c504f60965d1f9eec6": [ "wss://theforest.nostr1.com" ],
+      "bc28aad5b167f31dd37c66d8c95d400c6411d83275ed12c504f60965d1f9eec6": [ "wss://spatia-arcana.com"]
   }
 }
