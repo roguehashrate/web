@@ -3,12 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RogueHashrate — find me on Nostr, GitHub, and my projects.">
   <title>RogueHashrate</title>
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=6">
   <link rel="icon" href="favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="star-1"></div>
@@ -36,18 +34,32 @@
       <span class="npub-copied">copied!</span>
     </div>
     
-    <div class="links">
-      <a href="https://jumble.roguehashrate.com" class="link">RogueJumble</a>
-      <a href="https://4otsmfvlhe6281dq29zvswb1kfn1w2xn24ud14lus11ctx522ucrownfall.nsite.run/" class="link">Crownfall</a>
-      <a href="https://regicide.roguehashrate.com" class="link">Regicide</a>
-      <a href="https://pewpew.roguehashrate.com" class="link">PewPew</a>
-    </div>
-
-   <div class="links">
-    <a href="https://github.com/roguehashrate" class="link" target="_blank">GitHub</a>
-  </div>
+    <nav class="links" aria-label="projects">
+      <a href="https://jumble.roguehashrate.com" class="link">
+        <span class="link-name">RogueJumble</span>
+        <span class="link-desc">a fork of the Nostr client Jumble</span>
+      </a>
+      <a href="https://4otsmfvlhe6281dq29zvswb1kfn1w2xn24ud14lus11ctx522ucrownfall.nsite.run/" class="link">
+        <span class="link-name">Crownfall</span>
+        <span class="link-desc">card game</span>
+      </a>
+      <a href="https://regicide.roguehashrate.com" class="link">
+        <span class="link-name">Regicide</span>
+        <span class="link-desc">card game</span>
+      </a>
+      <a href="https://pewpew.roguehashrate.com" class="link">
+        <span class="link-name">PewPew</span>
+        <span class="link-desc">arcade-style shooter</span>
+      </a>
+      <a href="https://github.com/roguehashrate" class="link" target="_blank">
+        <span class="link-name">GitHub</span>
+      </a>
+    </nav>
 
   <script>
+    const PUBKEY = 'bc28aad5b167f31dd37c66d8c95d400c6411d83275ed12c504f60965d1f9eec6';
+
+    // npub copy button
     const npubCopy = document.getElementById('npub-copy');
     const npubCopied = document.querySelector('.npub-copied');
     npubCopy.addEventListener('click', async () => {
@@ -55,6 +67,53 @@
       npubCopied.classList.add('show');
       setTimeout(() => npubCopied.classList.remove('show'), 1500);
     });
+
+    // sync profile picture and theme from Nostr relay
+    (function() {
+      const pfp = document.querySelector('.pfp');
+      let gotProfile = false, gotTheme = false;
+
+      function done() {
+        if (gotProfile && gotTheme) ws.close();
+      }
+
+      const ws = new WebSocket('wss://relay.ditto.pub/');
+      ws.onopen = () => {
+        ws.send(JSON.stringify(['REQ', 'profile', { kinds: [0], authors: [PUBKEY], limit: 1 }]));
+        ws.send(JSON.stringify(['REQ', 'theme', { kinds: [16767], authors: [PUBKEY], limit: 1 }]));
+      };
+
+      ws.onmessage = (e) => {
+        const msg = JSON.parse(e.data);
+        if (msg[0] !== 'EVENT') return;
+        const ev = msg[2];
+
+        if (ev.kind === 0) {
+          try {
+            const meta = JSON.parse(ev.content);
+            if (meta.picture) pfp.src = meta.picture;
+          } catch {}
+          gotProfile = true;
+          done();
+        }
+
+        if (ev.kind === 16767) {
+          const colors = {};
+          for (const tag of ev.tags) {
+            if (tag[0] === 'c' && tag[2]) colors[tag[2]] = tag[1];
+          }
+          const root = document.documentElement.style;
+          if (colors.background) root.setProperty('--bg', colors.background);
+          if (colors.text) root.setProperty('--text', colors.text);
+          if (colors.primary) root.setProperty('--primary', colors.primary);
+          gotTheme = true;
+          done();
+        }
+      };
+
+      ws.onerror = () => ws.close();
+      setTimeout(() => { if (ws.readyState < 2) ws.close(); }, 5000);
+    })();
   </script>
   </div>
 </body>
