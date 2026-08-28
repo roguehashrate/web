@@ -1,6 +1,7 @@
 {
   "names": {
-    "_": "bc28aad5b167f31dd37c66d8c95d400c6411d83275ed12c504f60965d1f9eec6"
+    "_": "bc28aad5b167f31dd37c66d8c95d400c6411d83275ed12c504f60965d1f9eec6",
+    "roguebackup": "1bd1c89ed183bd6a3814b1aaafb7a72d85c0d4003910b1c89c9c836dbcfad614"
   },
   "relays": {
       "bc28aad5b167f31dd37c66d8c95d400c6411d83275ed12c504f60965d1f9eec6": [ "wss://relay.ditto.pub" ],
