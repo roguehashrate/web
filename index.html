@@ -4,8 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="RogueHashrate — find me on Nostr, GitHub, and my projects.">
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="canonical" href="https://roguehashrate.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://roguehashrate.com/">
+  <meta property="og:site_name" content="RogueHashrate">
+  <meta property="og:title" content="RogueHashrate">
+  <meta property="og:description" content="Find me on Nostr, GitHub, and my projects.">
+  <meta property="og:image" content="https://roguehashrate.com/assets/roguehashrate.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="RogueHashrate">
+  <meta name="twitter:description" content="Find me on Nostr, GitHub, and my projects.">
+  <meta name="twitter:image" content="https://roguehashrate.com/assets/roguehashrate.png">
   <title>RogueHashrate</title>
-  <link rel="stylesheet" href="style.css?v=8">
+  <link rel="stylesheet" href="style.css?v=14">
   <link rel="icon" href="favicon.ico" />
 </head>
 <body>
@@ -21,6 +33,7 @@
     <img src="assets/roguehashrate.png" alt="roguehashrate-pfp" class="pfp">
     
     <h1>RogueHashrate</h1>
+    <p class="about">i build nostr things</p>
     
     <p class="npub-label">find me on nostr <img src="assets/nostr-icon-white-transparent.svg" alt="nostr" class="nostr-icon"></p>
 
@@ -35,9 +48,9 @@
     </div>
     
     <nav class="links" aria-label="projects">
-      <a href="https://jumble.roguehashrate.com" class="link">
-        <span class="link-name">RogueJumble</span>
-        <span class="link-desc">a fork of the Nostr client Jumble</span>
+      <a href="https://github.com/roguehashrate/nostr-dms" class="link" target="_blank" rel="noopener">
+        <span class="link-name">NostrDMS</span>
+        <span class="link-desc">a nostr plugin for Dank Material Shell</span>
       </a>
       <a href="https://4otsmfvlhe6281dq29zvswb1kfn1w2xn24ud14lus11ctx522ucrownfall.nsite.run/" class="link">
         <span class="link-name">Crownfall</span>
@@ -51,73 +64,39 @@
         <span class="link-name">PewPew</span>
         <span class="link-desc">arcade-style shooter</span>
       </a>
-      <a href="https://nostrhub.io/npub1hs5244d3vle3m5muvmvvjh2qp3jprkpjwhk393gy7cykt50eamrq8f5rx4" class="link" target="_blank">
-        <span class="link-name">NostrHub</span>
-      </a>
-      <a href="https://github.com/roguehashrate" class="link" target="_blank">
-        <span class="link-name">GitHub</span>
-      </a>
     </nav>
 
-  <script>
-    const PUBKEY = 'bc28aad5b167f31dd37c66d8c95d400c6411d83275ed12c504f60965d1f9eec6';
+    <div class="links-row">
+      <a href="https://nostrhub.io/npub1hs5244d3vle3m5muvmvvjh2qp3jprkpjwhk393gy7cykt50eamrq8f5rx4" class="link link--mini" target="_blank">NostrHub</a>
+      <a href="https://github.com/roguehashrate" class="link link--mini" target="_blank">GitHub</a>
+    </div>
 
-    // npub copy button
-    const npubCopy = document.getElementById('npub-copy');
-    const npubCopied = document.querySelector('.npub-copied');
-    npubCopy.addEventListener('click', async () => {
-      await navigator.clipboard.writeText(document.querySelector('.npub-full').textContent);
-      npubCopied.classList.add('show');
-      setTimeout(() => npubCopied.classList.remove('show'), 1500);
-    });
+    <div class="tips">
+      <p class="tips-label">tip me</p>
+      <div class="tip-wrap">
+        <button type="button" class="tip tip--xmr" data-copy="85PuRnPAKLGKa5afE8s2H7fHdinFcrkYqdcfrsascty5SbX8xKSSsF53Hdcm7fryY9hii36fLHm3YNqTsKbhy5oVSdZRscX" title="copy monero address" aria-label="copy monero address">
+          <span class="tip-name"><svg class="tip-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.365 0 0 5.373 0 12.015c0 1.335.228 2.607.618 3.81h3.577V5.729L12 13.545l7.805-7.815v10.095h3.577c.389-1.203.618-2.475.618-3.81C24 5.375 18.635 0 12 0zm-1.788 15.307l-3.417-3.421v6.351H1.758C3.87 21.689 7.678 24 12 24s8.162-2.311 10.245-5.764h-5.04v-6.351l-3.386 3.421-1.788 1.79-1.814-1.79h-.005z"></path></svg>Monero</span>
+          <svg class="tip-copy-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        </button>
+        <span class="tip-copied">copied!</span>
+      </div>
+      <div class="tip-wrap">
+        <button type="button" class="tip tip--ln" data-copy="roguehashrate@rizful.com" title="copy lightning address: roguehashrate@rizful.com" aria-label="copy lightning address">
+          <span class="tip-name"><svg class="tip-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"></path></svg>Lightning</span>
+          <svg class="tip-copy-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        </button>
+        <span class="tip-copied">copied!</span>
+      </div>
+      <div class="tip-wrap">
+        <button type="button" class="tip tip--btc" data-copy="bc1qn6ra3saljv65h6gqxlmxg7j44u6ll5hh2kaq75" title="copy bitcoin address" aria-label="copy bitcoin address">
+          <span class="tip-name"><svg class="tip-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.638 14.904c-1.602 6.43-8.113 10.34-14.542 8.736C2.67 22.05-1.244 15.525.362 9.105 1.962 2.67 8.475-1.243 14.9.358c6.43 1.605 10.342 8.115 8.738 14.548v-.002zm-6.35-4.613c.24-1.59-.974-2.45-2.64-3.03l.54-2.153-1.315-.33-.525 2.107c-.345-.087-.705-.167-1.064-.25l.526-2.127-1.32-.33-.54 2.165c-.285-.067-.565-.132-.84-.2l-1.815-.45-.35 1.407s.975.225.955.236c.535.136.63.486.615.766l-1.477 5.92c-.075.166-.24.406-.614.314.015.02-.96-.24-.96-.24l-.66 1.51 1.71.426.93.242-.54 2.19 1.32.327.54-2.17c.36.1.705.19 1.05.273l-.51 2.154 1.32.33.545-2.19c2.24.427 3.93.257 4.64-1.774.57-1.637-.03-2.58-1.217-3.196.854-.193 1.5-.76 1.68-1.93h.01zm-3.01 4.22c-.404 1.64-3.157.75-4.05.53l.72-2.9c.896.23 3.757.67 3.33 2.37zm.41-4.24c-.37 1.49-2.662.735-3.405.55l.654-2.64c.744.18 3.137.524 2.75 2.084v.006z"></path></svg>Bitcoin</span>
+          <svg class="tip-copy-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        </button>
+        <span class="tip-copied">copied!</span>
+      </div>
+    </div>
 
-    // sync profile picture and theme from Nostr relay
-    (function() {
-      const pfp = document.querySelector('.pfp');
-      let gotProfile = false, gotTheme = false;
-
-      function done() {
-        if (gotProfile && gotTheme) ws.close();
-      }
-
-      const ws = new WebSocket('wss://relay.ditto.pub/');
-      ws.onopen = () => {
-        ws.send(JSON.stringify(['REQ', 'profile', { kinds: [0], authors: [PUBKEY], limit: 1 }]));
-        ws.send(JSON.stringify(['REQ', 'theme', { kinds: [16767], authors: [PUBKEY], limit: 1 }]));
-      };
-
-      ws.onmessage = (e) => {
-        const msg = JSON.parse(e.data);
-        if (msg[0] !== 'EVENT') return;
-        const ev = msg[2];
-
-        if (ev.kind === 0) {
-          try {
-            const meta = JSON.parse(ev.content);
-            if (meta.picture) pfp.src = meta.picture;
-          } catch {}
-          gotProfile = true;
-          done();
-        }
-
-        if (ev.kind === 16767) {
-          const colors = {};
-          for (const tag of ev.tags) {
-            if (tag[0] === 'c' && tag[2]) colors[tag[2]] = tag[1];
-          }
-          const root = document.documentElement.style;
-          if (colors.background) root.setProperty('--bg', colors.background);
-          if (colors.text) root.setProperty('--text', colors.text);
-          if (colors.primary) root.setProperty('--primary', colors.primary);
-          gotTheme = true;
-          done();
-        }
-      };
-
-      ws.onerror = () => ws.close();
-      setTimeout(() => { if (ws.readyState < 2) ws.close(); }, 5000);
-    })();
-  </script>
   </div>
+  <script src="app.js"></script>
 </body>
 </html>

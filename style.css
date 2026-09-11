@@ -76,6 +76,12 @@ body::after { top: 60%; left: 80%; animation-delay: -5s; opacity: 0.3; }
   border: 2px solid var(--primary);
   box-shadow: 0 0 20px color-mix(in srgb, var(--primary) 40%, transparent);
   animation: float 3s ease-in-out infinite;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.pfp:hover {
+  border-color: var(--primary);
+  box-shadow: 0 0 40px color-mix(in srgb, var(--primary) 70%, transparent), 0 0 80px color-mix(in srgb, var(--primary) 25%, transparent);
 }
 
 @keyframes float {
@@ -86,8 +92,15 @@ body::after { top: 60%; left: 80%; animation-delay: -5s; opacity: 0.3; }
 h1 {
   font-size: 1.75rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   letter-spacing: 0.5px;
+}
+
+.about {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #9a9a9a;
+  margin-bottom: 1.25rem;
 }
 
 .npub-label {
@@ -160,6 +173,7 @@ h1 {
   left: 50%;
   bottom: -1.6rem;
   transform: translateX(-50%);
+  z-index: 10;
   font-family: 'Departure Mono', monospace;
   font-size: 0.7rem;
   color: var(--bg);
@@ -219,6 +233,125 @@ h1 {
 
 .link:hover .link-desc {
   color: #d0d0d0;
+}
+
+.links-row {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.links-row .link {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.tips {
+  margin-bottom: 1.5rem;
+}
+
+.tips-label {
+  font-size: 0.85rem;
+  color: #666;
+  text-transform: lowercase;
+  margin-bottom: 0.75rem;
+}
+
+.tip-wrap {
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+
+.tip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.875rem 1.5rem;
+  background: color-mix(in srgb, var(--primary) 8%, transparent);
+  color: var(--primary);
+  border: 1px solid color-mix(in srgb, var(--primary) 40%, transparent);
+  border-radius: 8px;
+  font-family: 'Departure Mono', monospace;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: background 0.25s, border-color 0.25s, transform 0.25s;
+}
+
+.tip:hover {
+  background: color-mix(in srgb, var(--primary) 12%, transparent);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.tip-copy-icon {
+  opacity: 0.6;
+}
+
+.tip--ln, .tip--ln + .tip-copied {
+  --primary: #ffb300;
+}
+
+.tip--btc, .tip--btc + .tip-copied {
+  --primary: #f7931a;
+}
+
+.tip--xmr, .tip--xmr + .tip-copied {
+  --primary: #ff6600;
+}
+
+.tip-icon {
+  position: relative;
+  top: 1px;
+  margin-right: 0.4rem;
+}
+
+.tip-copied {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Departure Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--bg);
+  background: var(--primary);
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.tip-copied.show {
+  opacity: 1;
+}
+
+::selection {
+  background: var(--primary);
+  color: var(--bg);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--primary) 45%, transparent);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
 }
 
 :focus-visible {
