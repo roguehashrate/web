@@ -4,9 +4,9 @@
 
 	const NPUB = 'npub1hs5244d3vle3m5muvmvvjh2qp3jprkpjwhk393gy7cykt50eamrq8f5rx4';
 	const XMR =
-		'85PuRnPAKLGKa5afE8s2H7fHdinFcrkYqdcfrsascty5SbX8xKSSsF53Hdcm7fryY9hii36fLHm3YNqTsKbhy5oVSdZRscX';
+		'89GhV2sykHbfAjt1qxXpCcSt1EyfqRvs41xKfnCPA3VzB89PYghjmVL9pMiySdMdy9b1d3UYZEDTRRGhtoVtR6Bw6AGjMpK';
 	const LN = 'roguehashrate@rizful.com';
-	const BTC = 'bc1qn6ra3saljv65h6gqxlmxg7j44u6ll5hh2kaq75';
+	const BTC = 'bc1pvqywu0axgeqt6yjn773y4n9rs475jrxwj893jchpd23pl7fgkfjqnsw6sz';
 
 	let pfp = $state('/assets/roguehashrate.png');
 	let name = $state('RogueHashrate');
