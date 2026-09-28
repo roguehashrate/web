@@ -13,7 +13,9 @@ export default defineConfig({
 
 			// static adapter: outputs the site as plain files for GitHub Pages.
 			// See https://svelte.dev/docs/kit/adapter-static for more information about adapters.
-			adapter: adapter()
+			adapter: adapter({
+				pages: 'dist'
+			})
 		})
 	]
 });
